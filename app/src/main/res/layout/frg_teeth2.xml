@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:text="X-ray Photograph Front View"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/frg_teeth2_ivZoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_zoom_image"/>
+
+            </RelativeLayout>
+
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@color/btn_pressed"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="X-ray Photograph Front View"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:textColor="@android:color/white"/>-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_border_blue_whitebg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Please Add Front View of your teeth"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#9C9C9C"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_plus"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/frg_teeth_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drawer_width"
+                    android:layout_margin="2dp"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/frg_teeth_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/teeth_detail_tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="Add Row"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/teeth_detail_tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="Edit"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pooja.carepack.reveallayout.RevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reveal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33214c74"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/frg_message_new_tvToFriendName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="To : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/frg_message_new_etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frg_message_new_tvToFriendName"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:hint="Write your message" />
+
+    </RelativeLayout>
+</com.pooja.carepack.reveallayout.RevealLayout>
+
+    <!--33214c74-->

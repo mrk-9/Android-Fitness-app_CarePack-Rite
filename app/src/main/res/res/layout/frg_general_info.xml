@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_border_corner_blue"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etFirstName"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etLastName"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etStreet1"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Street 1"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etStreet2"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Street 2"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etZIP"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="ZIP"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etCity"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etCountry"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:hint="Country"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:id="@+id/frg_general_info_llCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etPhoneHome"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Phone Home"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etCellHome"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="CellPhone"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etbirthdate"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:hint="Birth Date"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:id="@+id/frg_general_info_llbirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etbloodGroup"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:hint="Blood Group"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:id="@+id/frg_general_info_llbloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_general_info_etGender"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:hint="Gender"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:id="@+id/frg_general_info_llGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:background="@color/setting_bg" />-->
+
+
+    </LinearLayout>
+
+
+</ScrollView>

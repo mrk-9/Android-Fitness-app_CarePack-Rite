@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:hint="Title"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_border_corner_blue"
+                android:padding="5dp">
+
+                <TableRow
+                    >
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Titles"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"/>
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Location"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"/>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_border_corner_blue"
+                android:padding="5dp">
+
+                <TableRow
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Starts"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="03.11.2015"
+                        android:padding="5dp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Ends"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="01:00"
+                        android:padding="5dp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Repeat"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Never"
+                        android:padding="5dp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Invitees"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Never"
+                        android:padding="5dp"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/btn_pressed"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Notes"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_height"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_border_corner_blue"
+                android:gravity="top"
+                android:hint="Write here note.."
+                android:padding="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border_corner_white"
+        android:gravity="center"
+        android:hint="dose"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_pressed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Dose"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border_corner_white"
+        android:gravity="center"
+        android:hint="Number"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border_corner_white"
+        android:gravity="center"
+        android:hint="M.G."
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_pressed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Select Time"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"/>-->
+</LinearLayout>

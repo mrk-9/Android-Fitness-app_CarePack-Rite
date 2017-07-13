@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">CarePack</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="facebook_app_id">189850238026092</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="sender_id">793071281569</string>
+    // for device token
+    <string name="menu_save_text">Save</string>
+    <string name="menu_add_text">Add</string>
+    <string name="action_settings">Settings</string>
+    <string name="crash_toast_text">Try again..</string>
+
+    <string name="toast_invalid_this">You can\'t leave this field empty.</string>
+    <string name="toast_invalid_">You can\'t leave %1$s empty.</string>
+    <string name="toast_invalid_selection">Please select %1$s.</string>
+    <string name="toast_invalid_start_end_date">End Date must be greater than Start Date</string>
+    <string name="toast_invalid_reminder_and_vaccination">Reminder Date must be greater than Vaccination Date</string>
+    <string name="toast_invalid_start_end_time">End Time must be greater than Start Time</string>
+    <string name="toast_invalid_email">Invalid Email Address</string>
+    <string name="toast_invalid_password_length">Password must contain at least six alphanumeric characters.</string>
+    <!--Password should be 6 character long.-->
+    <string name="toast_invalid_login">Please Enter valid email and password.</string>
+    <string name="toast_invalid_phone">Number should be 10 digit long.</string>
+    <string name="toast_invalid_zip">Zip code must be 6 digit.</string>
+    <string name="toast_invalid_height_weight">Please Enter Height and Weight in Body Setting.</string>
+    <string name="toast_invalid_height">Please enter valid Height.</string>
+    <string name="toast_invalid_weight">Please enter valid Weight.</string>
+
+
+    <string-array name="drawer_item">
+        <item>Emergency Email</item>
+        <item>Dashboard</item>
+        <item>Message</item>
+        <item>Fitness Status</item>
+        <item>Heart Rate</item>
+        <item>Body Mass Index</item>
+        <item>Vaccination Card</item>
+        <item>Medical Findings</item>
+        <item>Tablet Regulation</item>
+        <item>Treatment Plan</item>
+        <item>Teeth Overview</item>
+        <item>Insurance Card</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+
+
+    <array name="drawer_icon">
+        <item>@drawable/ic_emergenct_email</item>
+        <item>@drawable/ic_dashboard</item>
+        <item>@drawable/ic_message</item>
+        <item>@drawable/ic_fitnessstatus</item>
+        <item>@drawable/ic_heart_rate</item>
+        <item>@drawable/ic_bmi</item>
+        <item>@drawable/ic_medical_finding</item>
+        <item>@drawable/ic_vaccation_card</item>
+        <item>@drawable/ic_medical_pan</item>
+        <item>@drawable/ic_treatement</item>
+        <item>@drawable/ic_teeth</item>
+        <item>@drawable/ic_insurance_card</item>
+        <item>@drawable/ic_setting</item>
+        <item>@drawable/ic_logout</item>
+        <item>@drawable/ic_account_setting</item>
+    </array>
+
+    <string-array name="bloodgroup">
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>O+</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>AB-</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="repeat">
+        <item>Never</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="tablet_unit">
+        <item>mg</item>
+        <item>dl</item>
+        <item>o</item>
+        <item>g</item>
+        <item>gm</item>
+    </string-array>
+
+    <string-array name="settings">
+        <item>General</item>
+        <item>Body Setting</item>
+        <item>Family Doctor Info</item>
+        <!--<item>Emergency Setting</item>-->
+        <item>Kinship 1</item>
+        <item>Kinship 2</item>
+        <item>Whatsapp Info</item>
+        <item>Change Password</item>
+        <!--<item>Allow "CarePack Pro" to Read and Write Data</item>-->
+    </string-array>
+
+    <string name="txt_whatsapp">Use WhatsAPP to send Emergency information to other person</string>
+</resources>

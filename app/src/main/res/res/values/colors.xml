@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#142e46</color>
+    <color name="colorPrimaryDark">#2c659c</color>
+    <color name="colorAccent">#214c74</color>
+
+
+    <color name="colorPrimaryE">#7c0202</color>
+    <color name="colorPrimaryDarkE">#ff0000</color>
+    <color name="colorAccentE">#b90303</color>
+
+
+    <color name="btn_normal">#0177bf</color>
+    <color name="btn_pressed">#2c659c</color>
+    <color name="btn_disable">#990177bf</color>
+
+    <color name="setting_bg">#B8D3FE</color>
+    <color name="setting_header_bg">#027AC1</color>
+
+    <color name="bg">#b7d2fd</color>
+    <color name="header">#2c659c</color>
+    <color name="subtitle">#0177bf</color>
+    <color name="chart_bg">#181B5E</color>
+
+    <color name="chart_steps">#8DAFBB</color>
+    <color name="chart_workout">#7D7AC2</color>
+    <color name="chart_sleep">#3499D6</color>
+    <color name="chart_awake">#F5B082</color>
+    <color name="gray">#F1F1F1</color>
+
+</resources>

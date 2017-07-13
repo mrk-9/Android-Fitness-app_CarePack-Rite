@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_border_corner_blue"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="Organ Donation"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="right"-->
+                <!--android:text="-"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:contentDescription="@null"-->
+                <!--android:padding="10dp"-->
+                <!--android:src="@drawable/ic_arrow" />-->
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_emer_settings_etOraganDonation"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Organ Donation"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="Collapse Wearing Android Watch"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="right"-->
+                <!--android:text="-"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:contentDescription="@null"-->
+                <!--android:padding="10dp"-->
+                <!--android:src="@drawable/ic_arrow" />-->
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_emer_settings_etCollapseWearingWatch"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Collapse Wearing Android Watch"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/row_workout_speed_tvNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0.0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/row_workout_speed_tvSpeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="0 m/min"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/row_workout_speed_tvDuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="20 min"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tvWorkoutRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tvWorkoutCalory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="20"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>

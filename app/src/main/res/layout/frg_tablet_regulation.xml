@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lv_table_regalation_ll"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_border_corner_blue"
+        android:padding="2dp"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <com.pooja.carepack.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lv_table_regalation"
+            android:layout_width="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:overScrollMode="never"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+    </LinearLayout>
+   <!-- <com.pooja.carepack.swipemenulistview.SwipeMenuListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/btn_pressed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="SHARE"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />-->
+
+
+</LinearLayout>

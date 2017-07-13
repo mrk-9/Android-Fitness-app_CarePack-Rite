@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/btn_pressed">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Vaccination"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="Reminder"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_border_corner_blue"
+                android:padding="2dp"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content">
+
+                <com.pooja.carepack.swipemenulistview.SwipeMenuListView
+                    android:id="@+id/vaccination_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_pressed"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Please add your Vaccination"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"/>
+
+            <com.pooja.carepack.utils.FlowLayout
+                android:id="@+id/vaccination_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_border_corner_blue"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

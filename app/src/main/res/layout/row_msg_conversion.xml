@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.pooja.carepack.utils.CircleImageView
+        android:id="@+id/row_msg_conversion_ivUserImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_person" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+
+            <TextView
+                android:id="@+id/row_msg_conversion_tvUserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="John"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/row_msg_conversion_tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 h"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/row_msg_conversion_tvLastMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="test"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+
+</LinearLayout>

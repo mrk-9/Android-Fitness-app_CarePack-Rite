@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/frg_image_crop_cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:scaleType="fitCenter"
+        app:fixAspectRatio="false"
+        app:cropShape="rectangle"/>
+
+    <!--<com.pooja.carepack.utils.CropImageView-->
+        <!--android:id="@+id/frg_image_crop_cropImageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight=".8"-->
+        <!--custom:cropMode="ratio_fit_image"-->
+        <!--custom:backgroundColor="@color/bg"-->
+        <!--custom:handleColor="@android:color/white"-->
+        <!--custom:guideColor="@android:color/white"-->
+        <!--custom:frameColor="@android:color/white"-->
+        <!--custom:handleSize="8dp"-->
+        <!--custom:touchPadding="8dp"-->
+        <!--custom:handleShowMode="show_always"-->
+        <!--custom:guideShowMode="show_on_touch"-->
+        <!--custom:minFrameSize="50dp"-->
+        <!--custom:frameStrokeWeight="1dp"-->
+        <!--custom:guideStrokeWeight="1dp"-->
+        <!--/>-->
+
+    <com.rey.material.widget.Slider
+        style="@style/Material.Widget.Slider"
+        android:id="@+id/frg_image_crop_sdRotateImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="16dp"
+        app:sl_value="0"
+        android:paddingBottom="10dp"
+        custom:sl_minValue="0"
+        custom:sl_maxValue="360"
+        custom:sl_stepValue="1"
+        custom:sl_primaryColor="@color/colorPrimary"
+        custom:sl_trackCap="round"
+        custom:sl_secondaryColor="@color/colorPrimaryDark"
+        />
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/btn_pressed"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_workout_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Timer"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00:00"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/btn_pressed"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min/Mile"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ll_workout_timer"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_arrow"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#66000000"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calories"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="20"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/btn_pressed"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#66000000"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="02"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/btn_pressed"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mile"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/btn_pressed"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#66000000"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/workout_add_current_stop"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/btn_pressed"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Stop"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"/>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/workout_add_current_pause"
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/btn_pressed"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pause"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

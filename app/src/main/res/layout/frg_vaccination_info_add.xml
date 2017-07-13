@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/btn_pressed"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Description"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_border_corner_blue">
+
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_add_vaccination_info_tvDesc"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200"
+                    android:maxLines="5"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_border_corner_blue"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_add_vaccination_info_etName"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Vaccination Name"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_add_vaccination_info_etVaccineDate"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:hint="Vaccination Date"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+
+                    <com.rey.material.widget.LinearLayout
+                        android:id="@+id/frg_add_vaccination_info_llDate"
+                        style="@style/Material.Drawable.Ripple.Touch.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="15dp"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_add_vaccination_info_etReminderMeDate"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:hint="Reminder Me Date"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+
+                    <com.rey.material.widget.LinearLayout
+                        android:id="@+id/frg_add_vaccination_info_llReminderMeDate"
+                        style="@style/Material.Drawable.Ripple.Touch.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

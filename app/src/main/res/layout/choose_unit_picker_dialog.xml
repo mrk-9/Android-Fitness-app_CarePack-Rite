@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="35dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <com.rey.material.widget.LinearLayout
+            android:id="@+id/choose_unit_dialog_llmeter"
+            style="@style/Material.Drawable.Ripple.Touch.Light"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Meter"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"/>
+
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+            android:id="@+id/choose_unit_dialog_llkm"
+            style="@style/Material.Drawable.Ripple.Touch.Light"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Kilometer"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"/>
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+            android:id="@+id/choose_unit_dialog_llmiles"
+            style="@style/Material.Drawable.Ripple.Touch.Light"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Mile"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+        </com.rey.material.widget.LinearLayout>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2">-->
+
+    <!--<com.rey.material.widget.Button-->
+    <!--android:id="@+id/timer_picker_dialog_btnOK"-->
+    <!--style="@style/Material.Drawable.Ripple.Wave"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/btn_pressed"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="OK"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--android:textColor="@android:color/white" />-->
+
+    <!--<com.rey.material.widget.Button-->
+    <!--android:id="@+id/timer_picker_dialog_btnCancle"-->
+    <!--style="@style/Material.Drawable.Ripple.Wave"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/btn_pressed"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="CANCLE"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--android:textColor="@android:color/white" />-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

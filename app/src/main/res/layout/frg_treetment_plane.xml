@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F7EC4"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/treatment_cal_prev_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_arrow_left"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="Oct"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/treatment_cal_curr_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="November"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/treatment_cal_next_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:gravity="center_vertical"
+            android:text="Dec"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_border_blue_whitebg">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_border_blue_whitebg"
+            android:padding="10dp"
+            android:text="No Appointment"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:visibility="gone">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_border_blue_whitebg"
+            android:padding="2dp">
+
+            <com.pooja.carepack.swipemenulistview.SwipeMenuListView
+                android:id="@+id/frg_treatement_appointment_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btn_pressed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Share"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

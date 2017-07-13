@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_border_corner_blue"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".85"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Emergency Warning"
+                    android:textColor="@android:color/black"
+                     />
+
+
+                <!--<com.rey.material.widget.Switch-->
+                    <!--style="@style/Material.Widget.Switch"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New ToggleButton"-->
+                    <!--android:id="@+id/frg_whatsapp_info_switchEmerWarning"-->
+                    <!--android:layout_weight=".2" />-->
+                <CheckBox
+                    android:id="@+id/frg_whatsapp_info_switchEmerWarning"
+                    android:layout_width="0dp"
+                    android:layout_weight=".15"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cb_switch_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_whatsapp_info_etWhatsappNumber"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="WhatsAPP Number"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/txt_whatsapp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

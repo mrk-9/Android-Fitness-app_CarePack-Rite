@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DD111111"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:id="@+id/dialog_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/edt_email"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            app:et_dividerErrorColor="#ff0000"
+            app:et_dividerHeight="1dp"
+            app:et_labelEnable="true"
+            app:et_labelTextColor="@color/btn_pressed"
+            app:et_supportMode="helper"
+            app:et_supportTextErrorColor="#ff0000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_send"
+            style="@style/Material.Drawable.Ripple.Wave.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_border_corner_blue"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Send"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_discard"
+            style="@style/Material.Drawable.Ripple.Wave.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_border_corner_blue"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@android:string/cancel"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

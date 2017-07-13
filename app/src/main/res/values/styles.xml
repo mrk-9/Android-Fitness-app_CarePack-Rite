@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/bg</item>
+
+    </style>
+    <style name="AppThemeEmergency" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryE</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkE</item>
+        <item name="colorAccent">@color/colorAccentE</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="selectableItemBackground">@null</item>
+    </style>
+
+
+    <style name="NavigatorDrawableIcon" parent="Material.Drawable.NavigationDrawerIcon">
+        <item name="lmd_strokeSize">3dp</item>
+        <item name="lmd_padding">18dp</item>
+    </style>
+
+    <style name="ToolbarRippleStyle" parent="Material.Drawable.Ripple.Touch">
+        <item name="rd_backgroundColor">#00000000</item>
+        <item name="rd_maxRippleRadius">48dp</item>
+        <item name="rd_rippleColor">#33FFFFFF</item>
+    </style>
+
+    <style name="NavigationDrawerDrawable">
+        <item name="nd_ripple">@style/ToolbarRippleStyle</item>
+        <item name="nd_icon">@style/NavigatorDrawableIcon</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slied_up</item>
+        <item name="android:windowExitAnimation">@anim/slied_down</item>
+    </style>
+
+
+    <style name="Material.Widget.EditText">
+        <item name="et_labelEnable">true</item>
+        <item name="et_labelPadding">0dp</item>
+        <item name="et_labelTextAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="et_labelTextColor">#000</item>
+        <item name="et_labelEllipsize">end</item>
+        <item name="et_labelInAnim">@anim/abc_fade_in</item>
+        <item name="et_labelOutAnim">@anim/abc_fade_out</item>
+        <item name="et_dividerErrorColor">?attr/colorAccent</item>
+        <item name="et_dividerAnimDuration">@android:integer/config_shortAnimTime</item>
+        <item name="et_dividerHeight">0dp</item>
+        <item name="et_dividerPadding">0dp</item>
+        <item name="et_dividerCompoundPadding">true</item>
+        <item name="et_supportTextAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="et_supportTextColor">#000</item>
+        <item name="et_supportTextErrorColor">?attr/colorAccent</item>
+        <item name="et_supportEllipsize">end</item>
+    </style>
+
+    <style name="Material.Widget.EditText.Light" parent="Material.Widget.EditText">
+        <item name="et_labelTextColor">#000</item>
+        <item name="et_supportTextColor">#000</item>
+    </style>
+
+    <style name="CircularProgressDrawableStyle" parent="Material.Drawable.CircularProgress"/>
+
+
+</resources>

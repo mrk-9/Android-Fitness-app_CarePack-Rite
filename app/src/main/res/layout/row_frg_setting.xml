@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.rey.material.widget.RelativeLayout
+    android:id="@+id/row_frg_settings_llMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/setting_header_bg"
+    android:weightSum="1"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/row_frg_setting_tvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:text="General"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/setting_general_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:padding="10dp"
+        android:src="@drawable/ic_arrow_right" />
+</com.rey.material.widget.RelativeLayout>

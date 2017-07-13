@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <com.pooja.carepack.utils.ProgressWheel
+            android:id="@+id/frg_bmi_pager1_progressWheel"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            ProgressWheel:barColor="@color/colorPrimaryDark"
+            ProgressWheel:barWidth="15dp"
+            ProgressWheel:circleColor="@android:color/white"
+            ProgressWheel:progressBarLength="60dp"
+            ProgressWheel:rimColor="@color/colorPrimary"
+            ProgressWheel:rimWidth="1dp"
+            ProgressWheel:spinSpeed="3dp"
+            ProgressWheel:textColor="@color/colorPrimaryDark"
+            ProgressWheel:textSize="20sp"
+            ProgressWheel:textSize2="35sp" />
+
+        <!--<LinearLayout-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:background="@drawable/bg_border_round_blue"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="@dimen/nav_header_height"-->
+        <!--android:layout_height="@dimen/nav_header_height"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Your BMI"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:textColor="@color/btn_pressed"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/frg_bmi_pager1_tvBMI"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/btn_pressed"-->
+        <!--android:textSize="?actionBarSize"-->
+        <!--android:textStyle="bold"/>-->
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/frg_bmi_pager1_tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Normal Weight"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/btn_pressed" />
+        <TextView
+            android:id="@+id/frg_bmi_pager1_tvStatus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="(18.5-22.9)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#a9a9a9" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/btn_pressed" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border_blue_whitebg"
+        android:padding="2dp">
+
+        <com.pooja.carepack.utils.CoverFlow
+            android:id="@+id/bmi_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/frg_bmi_pager1_ivGallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person_bmi_bg" />
+    </FrameLayout>
+</LinearLayout>

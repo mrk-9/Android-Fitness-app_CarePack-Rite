@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+
+
+        <com.rey.material.widget.LinearLayout
+            style="@style/Material.Drawable.Ripple.Touch.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:maxLines="2"
+                android:textColor="@android:color/black"
+                android:text="@string/toast_invalid_height_weight"
+                 />
+
+        </com.rey.material.widget.LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/set_bmi_dialog_btnOk"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="2"
+            android:background="@color/btn_pressed"
+            android:gravity="center"
+            android:text="OK"
+            android:maxLines="1"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <!--<com.rey.material.widget.Button-->
+            <!--android:id="@+id/set_bmi_dialog_btnCancle"-->
+            <!--style="@style/Material.Drawable.Ripple.Wave"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/btn_pressed"-->
+            <!--android:gravity="center"-->
+            <!--android:text="CANCLE"-->
+            <!--android:maxLines="1"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:textColor="@android:color/white" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

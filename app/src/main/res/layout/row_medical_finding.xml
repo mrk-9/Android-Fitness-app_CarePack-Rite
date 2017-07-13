@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/row_medical_finding_cbDrawerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/cb_switch_selector"
+            android:checked="true"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:id="@+id/row_medical_finding_ivDrawerImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="#E4E2E4"/>
+
+        <TextView
+            android:id="@+id/row_medical_finding_tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=" Broken Leg"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/row_medical_finding_tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=" 05.10.2015"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

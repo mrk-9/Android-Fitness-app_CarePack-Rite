@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivDrawerImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/routedemo"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+
+            <TextView
+                android:id="@+id/tvDrawername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Escarpment trek"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23/12/2015"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="1.57 mi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_border_squere_gray"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Austin, Tx"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gain +23.1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_arrow"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/btn_pressed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Back View of Card"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_border_blue_whitebg"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Add Back View of Card"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#9C9C9C"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_plus"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/frg_insurance_back_image"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <com.rey.material.widget.Button
+        style="@style/Material.Drawable.Ripple.Wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/btn_pressed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Send Mail"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

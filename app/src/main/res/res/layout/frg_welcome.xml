@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/splash_iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:contentDescription="@null"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/splash_ll_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/welcome_iv_sign_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                android:padding="2dp"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_or" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="#85ffffff"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#85ffffff"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingBottom="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/welcome_cb_remember"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/cb_reminder_selector"
+                    android:text="Remember me"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tvForget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="  Forgot Password? "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/welcome_cb_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="5dp"
+                android:button="@drawable/cb_reminder_mini_selector"
+                android:checked="false"
+                android:text="I accept the Terms and Conditions"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/welcome_tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:onClick="onClick"
+                android:text="LOGIN"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:id="@+id/welcome_ll_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not user? Register"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" here "
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

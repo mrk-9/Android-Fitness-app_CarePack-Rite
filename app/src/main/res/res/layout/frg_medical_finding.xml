@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/btn_pressed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Finding"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:text="Check up date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <com.pooja.carepack.swipemenulistview.SwipeMenuListView
+        android:layout_width="match_parent"
+        android:id="@+id/finding_lv_medical"
+        android:padding="2dp"
+        android:scrollbars="none"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_border_corner_blue"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/btn_pressed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="X-ray Photograph"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border_blue_whitebg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:textColor="#9C9C9C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Please Add Left View of your teeth"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_plus"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/bg_border_blue_whitebg"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Write description here"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        style="@style/Material.Drawable.Ripple.Wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/btn_pressed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SHARE"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"/>
+
+
+</LinearLayout>

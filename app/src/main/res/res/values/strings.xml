@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">CarePack</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="facebook_app_id">189850238026092</string> // carepack
+    <string name="please_wait">Please Wait</string> // resset
+    <string name="sender_id">793071281569</string> // for device token
+    <string name="menu_save_text">Save</string>
+    <string name="menu_add_text">Add</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="drawer_item">
+        <item>Emergency Email</item>
+        <item>Dashboard</item>
+        <item>Message</item>
+        <item>Fitness Status</item>
+        <item>Heart Rate</item>
+        <item>Body Mass Index</item>
+        <item>Medical Findings</item>
+        <item>Vaccination Card</item>
+        <item>Tables Regalation</item>
+        <item>Treatment Plane</item>
+        <item>Teeth Overview</item>
+        <item>Insurance Card</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+
+
+
+    <array name="drawer_icon">
+        <item>@drawable/ic_emergenct_email</item>
+        <item>@drawable/ic_dashboard</item>
+        <item>@drawable/ic_message</item>
+        <item>@drawable/ic_fitnessstatus</item>
+        <item>@drawable/ic_heart_rate</item>
+        <item>@drawable/ic_bmi</item>
+        <item>@drawable/ic_medical_finding</item>
+        <item>@drawable/ic_vaccation_card</item>
+        <item>@drawable/ic_medical_pan</item>
+        <item>@drawable/ic_treatement</item>
+        <item>@drawable/ic_teeth</item>
+        <item>@drawable/ic_insurance_card</item>
+        <item>@drawable/ic_setting</item>
+        <item>@drawable/ic_logout</item>
+        <item>@drawable/ic_account_setting</item>
+    </array>
+
+    <string-array name="bloodgroup">
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>O+</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>AB-</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="settings">
+        <item>General</item>
+        <item>Body Setting</item>
+        <item>Family Doctor Info</item>
+        <item>Emergency Setting</item>
+        <item>Kinship 1</item>
+        <item>Kinship 2</item>
+        <item>Whatsapp Info</item>
+        <!--<item>Allow "CarePack Pro" to Read and Write Data</item>-->
+    </string-array>
+
+    <string name="txt_whatsapp">Use WhatsAPP to send Emergency information to other person</string>
+</resources>

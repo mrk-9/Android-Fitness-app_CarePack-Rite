@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Heart Rate"
+                     />
+
+
+                <!--<com.rey.material.widget.Switch-->
+                    <!--android:id="@+id/frg_read_write_data_swHeartRate"-->
+                    <!--style="@style/Material.Widget.Switch"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".1"-->
+                    <!--android:text="New ToggleButton" />-->
+                <CheckBox
+                    android:id="@+id/frg_read_write_data_swHeartRate"
+                    android:layout_width="0dp"
+                    android:layout_weight=".15"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cb_switch_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Height"
+                     />
+
+
+                <!--<com.rey.material.widget.Switch-->
+                    <!--android:id="@+id/frg_read_write_data_swHeight"-->
+                    <!--style="@style/Material.Widget.Switch"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".1"-->
+                    <!--android:text="New ToggleButton" />-->
+                <CheckBox
+                    android:id="@+id/frg_read_write_data_swHeight"
+                    android:layout_width="0dp"
+                    android:layout_weight=".15"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cb_switch_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:padding="10dp"
+                    android:text="Weight"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                     />
+
+
+                <!--<com.rey.material.widget.Switch-->
+                    <!--android:id="@+id/frg_read_write_data_swWeight"-->
+                    <!--style="@style/Material.Widget.Switch"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".1"-->
+                    <!--android:text="New ToggleButton" />-->
+                <CheckBox
+                    android:id="@+id/frg_read_write_data_swWeight"
+                    android:layout_width="0dp"
+                    android:layout_weight=".15"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cb_switch_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:padding="10dp"
+                    android:text="Body Mass Index"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                     />
+
+
+                <!--<com.rey.material.widget.Switch-->
+                    <!--android:id="@+id/frg_read_write_data_swBodyMass"-->
+                    <!--style="@style/Material.Widget.Switch"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".1"-->
+                    <!--android:text="New ToggleButton" />-->
+                <CheckBox
+                    android:id="@+id/frg_read_write_data_swBodyMass"
+                    android:layout_width="0dp"
+                    android:layout_weight=".15"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cb_switch_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:padding="10dp"
+                    android:text="Last Medical Finding"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                     />
+
+
+                <!--<com.rey.material.widget.Switch-->
+                    <!--android:id="@+id/frg_read_write_data_swLastMedicalFinding"-->
+                    <!--style="@style/Material.Widget.Switch"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".1"-->
+                    <!--android:text="New ToggleButton" />-->
+                <CheckBox
+                    android:id="@+id/frg_read_write_data_swLastMedicalFinding"
+                    android:layout_width="0dp"
+                    android:layout_weight=".15"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cb_switch_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:padding="10dp"
+                    android:text="Next Vaccination"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                     />
+
+
+                <!--<com.rey.material.widget.Switch-->
+                    <!--android:id="@+id/frg_read_write_data_swNextVccination"-->
+                    <!--style="@style/Material.Widget.Switch"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".1"-->
+                    <!--android:text="New ToggleButton" />-->
+                <CheckBox
+                    android:id="@+id/frg_read_write_data_swNextVccination"
+                    android:layout_width="0dp"
+                    android:layout_weight=".15"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cb_switch_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:padding="10dp"
+                    android:text="Next Appointment"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                     />
+
+
+                <!--<com.rey.material.widget.Switch-->
+                    <!--android:id="@+id/frg_read_write_data_swNextAppintMent"-->
+                    <!--style="@style/Material.Widget.Switch"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".1"-->
+                    <!--android:text="New ToggleButton" />-->
+                <CheckBox
+                    android:id="@+id/frg_read_write_data_swNextAppintMent"
+                    android:layout_width="0dp"
+                    android:layout_weight=".15"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cb_switch_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:padding="10dp"
+                    android:text="Daily Medicals"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                     />
+
+
+                <!--<com.rey.material.widget.Switch-->
+                    <!--android:id="@+id/frg_read_write_data_swDailyMedical"-->
+                    <!--style="@style/Material.Widget.Switch"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".1"-->
+                    <!--android:text="New ToggleButton"-->
+                    <!--/>-->
+                <CheckBox
+                    android:id="@+id/frg_read_write_data_swDailyMedical"
+                    android:layout_width="0dp"
+                    android:layout_weight=".15"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cb_switch_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

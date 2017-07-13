@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#316ea9"
+              android:orientation="vertical"
+              android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:background="#2c659b"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <com.pooja.carepack.utils.CircleImageView
+            android:id="@+id/ivDrawerImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_person"/>
+
+        <TextView
+            android:id="@+id/tvDrawername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="PETER MARK ANTHEN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/ivDrawerStatus"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_online"/>
+
+            <TextView
+                android:id="@+id/tvDrawerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="online"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.rey.material.widget.ListView
+
+        android:id="@+id/lvDrawerMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:overScrollMode="never"
+        android:paddingTop="10dp"
+        android:scrollbars="none"/>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.rey.material.widget.LinearLayout
+        style="@style/Material.Drawable.Ripple.Touch.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/set_workout_activity_info_etWorkoutTitle"
+            style="@style/Material.Widget.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="Workout Title"
+            android:inputType="text"
+            android:padding="@dimen/form_et_pading"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            app:et_labelTextColor="@color/colorPrimaryDark" />
+
+    </com.rey.material.widget.LinearLayout>
+
+    <com.rey.material.widget.LinearLayout
+        style="@style/Material.Drawable.Ripple.Touch.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/set_workout_activity_info_btnOk"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/btn_pressed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="OK"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/set_workout_activity_info_btnCancle"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/btn_pressed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:text="CANCLE"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </com.rey.material.widget.LinearLayout>
+
+</LinearLayout>

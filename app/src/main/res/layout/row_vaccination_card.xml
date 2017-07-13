@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/row_vaccination_card_cbEmailStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/cb_switch_selector"
+            android:checked="true"
+            android:padding="2dp"/>
+
+
+
+        <TextView
+            android:id="@+id/row_vaccination_card_tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=" Hepatitis B"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/row_vaccination_card_tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=" 02/11/2015"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F7EC4"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_arrow_left"
+android:id="@+id/treatment_cal_prev_month"
+            android:drawablePadding="5dp"
+            android:text="Oct"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/treatment_cal_curr_month"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="November"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/treatment_cal_next_month"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:text="Dec"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_border_blue_whitebg"
+            android:layout_weight="2.5">
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_border_blue_whitebg"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:padding="10dp"
+            android:text="No Appointment"
+            android:layout_weight="1">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btn_pressed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Share"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

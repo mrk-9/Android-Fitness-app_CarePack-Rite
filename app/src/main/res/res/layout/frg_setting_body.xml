@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/bg">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:weightSum="14">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.90" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etNeck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etArmL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etWaist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.99" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etHip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.06" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etThighL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.1" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etCalfL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.2" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:scaleType="fitXY"
+            android:src="@drawable/bodysettings" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:weightSum="14">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.90" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etBodyFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.02" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etArmR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.05" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etChest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.87" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etAbdonimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.09" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etThighR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.09" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etCalfR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.01" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etDressSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/frg_setting_body_etHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.01" />
+
+            <EditText
+                android:id="@+id/frg_setting_body_etWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.16" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" />
+
+    </LinearLayout>
+</FrameLayout>

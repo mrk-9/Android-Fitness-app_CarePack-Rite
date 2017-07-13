@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/btn_pressed"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Description"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_border_corner_blue">
+
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/frg_tablet_regulation_add_etDesc"
+                    style="@style/Material.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    app:et_labelTextColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_border_corner_blue"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_tablet_regulation_add_etMedicalName"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Medical Name"
+                        android:inputType="text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray"/>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_tablet_regulation_add_etMorningTime"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:hint="Morning Time"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+
+                    <com.rey.material.widget.LinearLayout
+                        android:id="@+id/frg_tablet_regulation_add_llMorningTime"
+                        style="@style/Material.Drawable.Ripple.Touch.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_tablet_regulation_add_etLunchTime"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:hint="Lunch Time"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+
+                    <com.rey.material.widget.LinearLayout
+                        android:id="@+id/frg_tablet_regulation_add_llLunchTime"
+                        style="@style/Material.Drawable.Ripple.Touch.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_tablet_regulation_add_etNightTime"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:hint="Night Time"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+
+                    <com.rey.material.widget.LinearLayout
+                        android:id="@+id/frg_tablet_regulation_add_llNightTime"
+                        style="@style/Material.Drawable.Ripple.Touch.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_tablet_regulation_add_etDose"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Dose"
+                        android:inputType="number"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_tablet_regulation_add_etNumber"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Number"
+                        android:inputType="number"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.rey.material.widget.EditText
+                        android:id="@+id/frg_tablet_regulation_add_etMG"
+                        style="@style/Material.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="M.G."
+                        android:inputType="numberDecimal"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        app:et_labelTextColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
